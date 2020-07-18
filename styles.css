@@ -1,14 +1,28 @@
 .grid {
   display: grid;
-  /* grid-template-columns:; */
-  grid-template-areas:
-  "cell cell cell cell";
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1em;
+  justify-items: center;
 }
 
-.cell {
-  background-color: red;
-  grid-area: a;
-  height: 10em;
+.grid div {
+  background-color: gray;
+  font-size: 20px;
+  height: 500px;
+  width: 200px;
+  }
+
+.character-img {
+  height: 5em;
+}
+
+.character-symbol {
+  height: 10px;
+}
+
+.click-to-page {
+  height: 10px;
 }
 
 .cell-h1 {
@@ -29,9 +43,6 @@
 
 @media screen and (max-width: 40em) {
   .grid {
-    grid-template-areas:
-  "a"
-  "b"
-  "c";
+    grid-template-columns: auto;
   }
 }
