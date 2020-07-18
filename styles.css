@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  /* grid-template-columns:; */
+  grid-template-areas:
+  "cell cell cell cell";
+}
+
+.cell {
+  background-color: red;
+  grid-area: a;
+  height: 10em;
+}
+
+.cell-h1 {
+  color: red;
+}
+
+.cell-h2 {
+
+}
+
+.cell-h3 {
+
+}
+
+.cell-h4 {
+
+}
+
+@media screen and (max-width: 40em) {
+  .grid {
+    grid-template-areas:
+  "a"
+  "b"
+  "c";
+  }
+}
