@@ -1,26 +1,29 @@
 body {
-  background-color: gray;
+  background-color: #6D6875;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nav {
   font-size: 1.8vw;
-  background-color: darkgray;
-}
-
-.header {
-  text-align:left;
-  margin-top: 5%;
-  margin-left: 2.8vw;
+  background-color: #1E1D20;
+  color: white;
+  margin: 0 0;
+  box-shadow: 0px 4px 9px 0px #323232;
 }
 
 .nav-top {
   display: flex;
   flex-direction: row-reverse;
+  margin-right: 2.8vw;
 }
 
 .nav-bottom {
   display: flex;
   flex-direction: row;
+  margin-left: 2.8vw;
+  margin-right: 2.8vw;
 }
 
 .nav-logo {
@@ -41,8 +44,17 @@ body {
 
 .profile-icon {
   margin-top: 2%;
+  margin-right: 5px;
   height: 3vw;
   width: auto;
+}
+
+.header {
+  text-align:left;
+  margin-top: 5%;
+  margin-left: 2.8vw;
+  color: white;
+  text-shadow: 0px 2px 2px #323232;
 }
 
 .grid {
@@ -62,59 +74,67 @@ body {
     display: flex;
     flex-direction: column; 
     background-color: white;
-    box-shadow:         0px 4px 9px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 4px 9px 0px #323232;
     width: 20vw;
 }
 
 .cell-img {
-  
+  display: flex;
+  flex-direction: column;
   height: 20vw;
   width: 20vw;
   background-size: cover;
   background-position: center;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: #FFCDB2;
+}
+
+.character-symbol {
+  height: 6vw;
+  width: 6vw;
+  margin-left: 70%;
+}
+
+.click-to-page {
+  height: 4vw;
+  width: 4vw;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 #mario {
   background-image: url(./assets/mario.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-repeat: no-repeat;
 }
 
 #dk {
   background-image: url(./assets/dk.png);
-  background-color: lightgray;
 }
 
 #link {
   background-image: url(./assets/link.png);
-  background-color: lightgray;
 }
 
 #samus {
   background-image: url(./assets/samus.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-repeat: no-repeat;
 }
 
 #yoshi {
   background-image: url(./assets/yoshi.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-repeat: no-repeat;
 }
 
 #kirby {
   background-image: url(./assets/kirby.png);
-  background-color: lightgray;
   
 }
 
 #fox {
   background-image: url(./assets/fox.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-position-x: -10px;
   background-repeat: no-repeat;
@@ -122,25 +142,22 @@ body {
 
 #pikachu {
   background-image: url(./assets/pikachu.png);
-  background-color: lightgray;
-}
-
-.character-symbol {
-  height: 3vw;
-  margin-right: 0;
-}
-
-.click-to-page {
-  height: 3vw;
-  
 }
 
 .cell-text {
-  
+  background-color: #B5838D;
+  color: white;
+  font-size: 1.4vw;
+}
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .cell-h1 {
-  font-size:2vw;
+  /* font-size:2vw; */
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -148,7 +165,7 @@ body {
 }
 
 .cell-h2 {
-  font-size: 2vw;
+  /* font-size: 2vw; */
   margin-top: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -160,13 +177,13 @@ body {
 .cell-h3 {
   margin-left: 10px;
   margin-right: 10px;
-  font-size:1.5vw;
+  /* font-size:1.5vw; */
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
 .cell-h4 {
-  font-size:1vw;
+  /* font-size:1vw; */
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 10px;
@@ -187,6 +204,21 @@ body {
   .cell-img {
     height: 60vw;
     width: 60vw;
+  }
+
+  .cell-text {
+    height: 35vw;
+    font-size: 2.5vw;
+  }
+
+  .character-symbol {
+    height: 17vw;
+    width: 17vw;
+  }
+  
+  .click-to-page {
+    height: 10vw;
+    width: 10vw;
   }
   
 }
