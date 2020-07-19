@@ -11,6 +11,7 @@ body {
   color: white;
   margin: 0 0;
   box-shadow: 0px 4px 9px 0px #323232;
+  max-height: 500px;
 }
 
 .nav-top {
@@ -66,8 +67,7 @@ body {
   top: 50%;
   left: 50%;
   margin-top: 5%;
-  margin-left: 2.8vw;
-  
+  margin-left: 2.8vw;  
 }
 
 .cell {
@@ -157,7 +157,6 @@ hr {
 }
 
 .cell-h1 {
-  /* font-size:2vw; */
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -165,7 +164,6 @@ hr {
 }
 
 .cell-h2 {
-  /* font-size: 2vw; */
   margin-top: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -177,13 +175,11 @@ hr {
 .cell-h3 {
   margin-left: 10px;
   margin-right: 10px;
-  /* font-size:1.5vw; */
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
 .cell-h4 {
-  /* font-size:1vw; */
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 10px;
@@ -191,6 +187,7 @@ hr {
 }
 
 @media screen and (max-width: 40em) {
+
   .grid {
     margin: 0 20%;
     grid-template-columns: auto;
@@ -220,5 +217,74 @@ hr {
     height: 10vw;
     width: 10vw;
   }
+}
+
+@media screen and (min-width: 60em) {
   
+  .header {
+    margin-top: 1%;
+  }
+
+  .cell-text {
+    font-size: .8vw;
+  } 
+
+  .grid {
+    grid-gap: 1.3vw;
+    margin-left: 2.8vw;  
+    margin-top: 1%;
+    width: .5vw
+
+  }
+  
+  .cell {
+      width: 12vw;
+  }
+  
+  .cell-img {
+    height: 12vw;
+    width: 12vw;
+  }
+
+  .character-symbol {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  
+  .click-to-page {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+
+@media screen and (min-width: 85em) {
+  
+  .cell-text {
+    font-size: .6vw;
+  } 
+
+  .grid {
+    grid-gap: .6vw;
+    margin-left: 2.8vw;  
+
+  }
+  
+  .cell {
+      width: 8vw;
+  }
+  
+  .cell-img {
+    height: 8vw;
+    width: 8vw;
+  }
+
+  .character-symbol {
+    height: 1vw;
+    width: 1vw;
+  }
+  
+  .click-to-page {
+    height: .5vw;
+    width: .5vw;
+  }
 }
