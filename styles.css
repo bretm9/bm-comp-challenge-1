@@ -5,22 +5,28 @@ body {
 .nav {
   font-size: 1.8vw;
   background-color: darkgray;
+  color: white;
+  margin: 0 0;
 }
 
 .header {
   text-align:left;
   margin-top: 5%;
   margin-left: 2.8vw;
+  color: white;
 }
 
 .nav-top {
   display: flex;
   flex-direction: row-reverse;
+  margin-right: 2.8vw;
 }
 
 .nav-bottom {
   display: flex;
   flex-direction: row;
+  margin-left: 2.8vw;
+  margin-right: 2.8vw;
 }
 
 .nav-logo {
