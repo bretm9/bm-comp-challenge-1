@@ -260,7 +260,7 @@ hr {
 @media screen and (min-width: 85em) {
   
   .cell-text {
-    font-size: .6vw;
+    font-size: .5vw;
   } 
 
   .grid {
