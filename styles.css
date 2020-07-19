@@ -1,10 +1,13 @@
 body {
-  background-color: gray;
+  background-color: #6D6875;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nav {
   font-size: 1.8vw;
-  background-color: darkgray;
+  background-color: #1E1D20;
   color: white;
   margin: 0 0;
 }
@@ -79,48 +82,42 @@ body {
   background-size: cover;
   background-position: center;
   justify-content: center;
+  background-color: #FFCDB2;
 }
 
 #mario {
   background-image: url(./assets/mario.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-repeat: no-repeat;
 }
 
 #dk {
   background-image: url(./assets/dk.png);
-  background-color: lightgray;
 }
 
 #link {
   background-image: url(./assets/link.png);
-  background-color: lightgray;
 }
 
 #samus {
   background-image: url(./assets/samus.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-repeat: no-repeat;
 }
 
 #yoshi {
   background-image: url(./assets/yoshi.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-repeat: no-repeat;
 }
 
 #kirby {
   background-image: url(./assets/kirby.png);
-  background-color: lightgray;
   
 }
 
 #fox {
   background-image: url(./assets/fox.png);
-  background-color: lightgray;
   background-position-y: 5px;
   background-position-x: -10px;
   background-repeat: no-repeat;
@@ -128,7 +125,6 @@ body {
 
 #pikachu {
   background-image: url(./assets/pikachu.png);
-  background-color: lightgray;
 }
 
 .character-symbol {
@@ -142,11 +138,13 @@ body {
 }
 
 .cell-text {
-  
+  background-color: #B5838D;
+  color: white;
+  font-size: 1.4vw;
 }
 
 .cell-h1 {
-  font-size:2vw;
+  /* font-size:2vw; */
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -154,7 +152,7 @@ body {
 }
 
 .cell-h2 {
-  font-size: 2vw;
+  /* font-size: 2vw; */
   margin-top: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -166,13 +164,13 @@ body {
 .cell-h3 {
   margin-left: 10px;
   margin-right: 10px;
-  font-size:1.5vw;
+  /* font-size:1.5vw; */
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
 .cell-h4 {
-  font-size:1vw;
+  /* font-size:1vw; */
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 10px;
@@ -193,6 +191,11 @@ body {
   .cell-img {
     height: 60vw;
     width: 60vw;
+  }
+
+  .cell-text {
+    height: 30vw;
+    font-size: 2.5vw;
   }
   
 }
